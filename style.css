@@ -1,0 +1,493 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.parent
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr;
+grid-template-areas: 
+'phone phone learn-more learn-more' 
+'keyboard tv tv icloud'
+'games choice choice icloud'
+'twitter popular vision vision';
+min-height: 100vh;
+}
+.phone
+{
+grid-area: phone;
+background-color:#FFFFFF;
+display: flex;
+overflow: hidden;
+}
+.phone .phone-text
+{
+    width: 50%;
+    padding: 20px;
+    align-content: center;
+    justify-content: center;
+    margin-left: 87px;
+}
+.phone .phone-img
+{
+    width: 50%;
+}
+.phone .phone-img img
+{
+    width:60%;
+    display: block;
+margin-top: 80px;
+}
+.phone .phone-text h6
+{
+color:#9fa3a7;
+font-size: 14px;
+font-weight: 400;
+text-align: start;
+font-family: "Open Sans", sans-serif;
+}
+.phone .phone-text h3
+{
+    font-size: 22px;
+    color:(51, 51, 51);
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+text-align: start;
+line-height: 32px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.phone .phone-text p
+{
+color: #9FA3A7;
+text-align: start;
+font-family: "Open Sans", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+}
+.learn-more
+{
+grid-area:learn-more ;
+align-content: center;
+justify-content: center;
+text-align: center;
+background-color: #F7F8F9;
+overflow: hidden;
+}
+.learn-more h6
+{
+    letter-spacing: 2px;
+    color:#9fa3a7;
+    font-size: 12px;
+    font-family: "Arvo", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.learn-more h1
+{
+color: #333333;
+font-family: "Arvo", serif;
+font-weight: 400;
+font-size: 48px;
+line-height: 60px;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+.learn-more a
+{
+color: #27b9c2;
+font-family: "Open Sans", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+}
+.keyboard
+{
+grid-area: keyboard;
+background-color: #F05638;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+overflow: hidden;
+}
+.keyboard .key-img img
+{
+    width: 100%;
+    padding:30px;
+}
+.keyboard strong
+{
+color: white;
+font-family: "Arvo", serif;
+font-weight:700;
+font-size: 22px;
+line-height: 32px;
+font-weight: bold;
+width: 50%;
+text-align: center;
+}
+.keyboard a
+{
+    font-weight:700;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    color:#ffc80a;
+    text-decoration: none;
+    letter-spacing: 2.4px;
+    margin-bottom: 60px;
+}
+.keyboard a::after
+{
+    content:">";
+    color:#ffc80a;
+    font-weight:700;
+    font-size: 12px;
+    padding-left: 3px;
+}
+.tv
+{
+grid-area: tv;
+background-color:#FFFFFF;
+display: flex;
+overflow: hidden;
+}
+.tv .caps 
+{
+text-align: start;
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+padding-left: 90px;
+}
+.tv .caps h6
+{
+    color:#9fa3a7;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+    margin-top: 80px;
+}
+.tv .caps h3
+{
+    color:#333333;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Arvo", serif;
+    line-height: 32px;
+}
+.tv .caps .caps-img
+{
+    overflow: hidden;
+}
+.tv .caps .caps-img img
+{
+    width: 100%;
+    transform: translateX(-60%);
+}
+.tv .about
+{
+    width: 50%;
+    text-align: start;
+    overflow: hidden;
+}
+.tv .about p
+{
+color:#9FA3A7;
+font-weight: 400;
+font-family: "Open Sans", sans-serif;
+font-size: 16px;
+line-height: 26px;
+margin-top: 80px;
+margin-bottom: 20px;
+}
+.tv .about a
+{
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color:#27b9c2;
+    font-size: 14px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+}
+.tv .about  a::after
+{
+    content:">";
+    color:#27b9c2;
+    font-weight:700;
+    font-size: 14px;
+    padding-left: 3px;
+}
+.icloud
+{
+grid-area:icloud ;
+background-color: #8F76BC;
+color: white;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+overflow: hidden;
+}
+.icloud .icloud-img 
+{
+    display: flex;
+    width: 373px;
+    height: 373px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #8166b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icloud .icloud-img .popular
+{
+    /* margin-top: 40px; */
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+}
+.icloud .icloud-img .popular i
+{
+    color:#FFC80A;
+    margin-right: 4px;
+    font-size: 10px;
+}
+.icloud .icloud-img .popular span
+{
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    letter-spacing: 2.4px;
+}
+.icloud .icloud-img img
+{
+width: 60%;
+transform: translateX(-5%);
+margin-top: 25px;
+}
+.icloud .icloud-img span
+{
+    letter-spacing: 2.4px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.icloud .icloud-text
+{
+    text-align: center;
+}
+.icloud .icloud-text h2
+{
+font-size: 32px;
+font-family: "Arvo", serif;
+font-weight: 700;
+padding-block: 15px;
+}
+.icloud .icloud-text p
+{
+font-size: 14px;
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+padding-bottom: 15px;
+line-height: 27px;
+}
+.icloud .icloud-text a
+{
+    text-decoration: none;
+font-size: 12px;
+font-family: "Open Sans", sans-serif;
+font-weight: 700;
+letter-spacing: 2px;
+color: black;
+background-color: #FFC80A;
+padding: 8px 40px 8px 40px;
+    border-radius: 60px;
+}
+.games
+{
+    grid-area: games;
+    background-color:#f7f8f9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.games .control-img img
+{
+    width:60%;
+}
+.games h3
+{
+    font-family: "Arvo", serif;
+    color: black;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+.games a
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+    color: #27b9c2;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 40px;
+}
+.games a::after
+{
+    content:">";
+    color:#27b9c2;
+    font-weight:700;
+    font-size: 10px;
+    padding-left: 3px;
+}
+.choice
+{
+ grid-area:choice ;   
+ background-color:#93b6b7;
+ color: white;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+ overflow: hidden;
+}
+.choice span
+{
+font-family: "Open Sans", sans-serif;
+font-size: 8px;
+line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+}
+.choice strong
+{
+    color: white;
+font-family: "Arvo", serif;
+font-weight:700;
+font-size: 22px;
+line-height: 32px;
+font-weight: bold;
+text-align: center;
+}
+.choice .choice-img img
+{
+    width: 100%;
+    transform: translateX(-10%);
+    display:block;
+}
+.twitter
+{
+    grid-area: twitter;
+    background-color:#38d5f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    overflow: hidden;
+}
+.twitter .circle
+{
+    width: 240px;
+    height: 240px;
+    padding-right: 34px;
+    padding-left: 34px;
+    border-radius: 50%;
+    background-color: #35cfed;
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.twitter .circle img
+{
+    width: 30%;
+}
+.twitter h3
+{
+    color: white;
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.popular
+{
+  grid-area:popular ;  
+  background-color: #F7F8F9;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.popular span
+{
+    background-color: #7bc424;
+    color: #fff;
+    padding:10px 25px 10px 25px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+.popular h3
+{
+    margin-top: 10px;
+    width: 70%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400
+}
+.vision
+{
+  grid-area:vision ;  
+  background-color: #2C2C2C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.vision .vision-img
+{
+    width: 80%;
+}
+.vision .vision-img img
+{
+width: 100%;
+ vertical-align: middle;
+}
+.vision  h3
+{
+    width: 100%;
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #fff;
+    transform: translateY(20%);
+    transform: translateX(30%);
+}
